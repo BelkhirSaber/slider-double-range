@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sliderdoublerange.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <div class="values">
+      <input type="number" name="range-min" id="value-min" min="0" max="300" value="30">
+      <span>&dash;</span>
+      <input type="number" name="range-max" id="value-max" min="0" max="300" value="220">
+    </div>
+
+
+    <div class="container">
+      <div class="slider-track"></div>
+      <input type="range" name="slider-min" id="slider-1" min="0" max="300" value="30" oninput="slidOne()">
+      <input type="range" name="slider-max" id="slider-2" min="0" max="300" value="220" oninput="slidTow()">
+    </div>
+
+  </div>
+
+
+  <script src="js/sliderdoublerange.js"></script>
+</body>
+
+</html>

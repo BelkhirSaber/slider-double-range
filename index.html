@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>double range slider</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="values">
+      <span id="range-1">0</span>
+      <span>&dash;</span>
+      <span id="range-2">100</span>
+    </div>
+
+
+    <div class="container">
+      <div class="slider">
+        <div class="slider-tracker"></div>
+        <input type="range" name="rangeMin" id="slider-1" value="30" min="0" max="100" oninput="slideOne()">
+        <input type="range" name="rangeMax" id="slider-2" value="70" min="0" max="100" oninput="slideTow()">
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
